@@ -337,11 +337,13 @@ footer {
     }
 
     .hero {
-        min-height: 680px;
-        padding: 50px 25px;
-        align-items: flex-start;
-    }
-
+    min-height: auto;
+    padding: 45px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
     .hero-text {
         width: 100%;
         text-align: center;
@@ -358,23 +360,23 @@ footer {
     }
 
 .hero-photo {
-    position: absolute;
-    height: 100%;
-    width: auto;
-    max-height: 100%;
-    max-width: 48%;
+    position: relative;
+    display: block;
+    width: 75%;
+    height: auto;
+    max-height: none;
+    max-width: 320px;
     object-fit: contain;
     object-position: bottom;
-    right: 5%;
-    bottom: 0;
+    right: auto;
+    bottom: auto;
+    margin: 25px auto 0;
     z-index: 1;
-
     mask-image: radial-gradient(
         ellipse 75% 85% at 55% 45%,
         black 45%,
         transparent 100%
     );
-
     -webkit-mask-image: radial-gradient(
         ellipse 75% 85% at 55% 45%,
         black 45%,
